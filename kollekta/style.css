@@ -64,8 +64,8 @@ nav a {
 
 /* SECTION */
 section {
-    padding: 70px 0px;
-    max-width: 1000px;
+    padding: 70px 40px;
+    max-width: 1100px;
     margin: auto;
 }
 
@@ -136,6 +136,7 @@ section p {
 .contact-section {
     background: #f8fafc;
     margin-bottom: 3%;
+
 }
 
 .contact-section h3 {
@@ -289,7 +290,54 @@ header.scrolled {
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    .contact-wrapper {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 60%;
+    }
+
+    .contact-info {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .contact-icon svg {
+        width: 10px;
+        height: 10px;
+        fill: #ffffff;
+    }
+
+    .contact-card h4 {
+        margin-left: 3%;
+        font-size: 13px;
+        color: #0f172a;
+    }
+
+    .contact-card p {
+        font-size: 12px;
+        color: #374151;
+        margin-left: 5%;
+    }
+
     nav {
         position: absolute;
         top: 100%;
